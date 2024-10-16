@@ -152,12 +152,11 @@ footer p {
   font-size: 18px;
   margin-bottom: 10px;
 }
-
 /* Animations */
 h1 {
   color: rgb(214, 8, 8);
   font-size: 40px;
-  animation: moveRight 15s infinite;
+  animation: moveRight 35s infinite; /* Duración aumentada a 30 segundos */
 }
 
 @keyframes moveRight {
@@ -187,7 +186,7 @@ h1 {
 
 p.promodescription {
   font-size: 20px;
-  animation: moveRight 15s infinite;
+  animation: moveRight 35s infinite;
   margin-bottom: 10px;
 }
 
