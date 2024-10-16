@@ -1,0 +1,200 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles - Página Hombre */
+header {
+    background-color: #1a1a1a;
+    /* Color de fondo más oscuro */
+    color: #fff;
+    padding: 1.5em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #0ecc00;
+    /* Línea inferior azul */
+}
+
+/* Estilos del logo */
+#LogoSweet {
+    height: 50px;
+    /* Tamaño ligeramente mayor */
+    margin-right: 2em;
+}
+
+/* Estilos de navegación */
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5em;
+    /* Mayor separación entre los enlaces */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    /* Tamaño más grande para los enlaces */
+    font-weight: 500;
+    /* Mayor peso en la tipografía */
+    padding: 0.5em 1.2em;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    /* Añadido efecto de transformación */
+    background-color: rgba(0, 102, 204, 0);
+    /* Fondo transparente inicial */
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #0ae335;
+    /* Fondo azul al hacer hover */
+    color: #fff;
+    transform: scale(1.05);
+    /* Efecto de aumento al hacer hover */
+}
+
+
+/* Estilos principales para la sección de "Conócenos" */
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.conocenos h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #444;
+}
+
+.conocenos p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 2em;
+    color: #555;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    color: #444;
+}
+
+ul {
+    margin-top: 1em;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+/* Estilos para las imágenes dentro de las secciones */
+.imagen-container {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+.imagen-container img {
+    max-width: 30%; /* Ajusta este valor para reducir aún más el tamaño */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    font-size: 0.9em;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo en el footer */
+.footer-logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+/* Redes sociales */
+.footer-social {
+    margin-bottom: 1em;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #ff6600;
+    /* Cambia el color de los íconos al hacer hover */
+}
+
+/* Enlaces de términos y contacto */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+footer li {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Texto de derechos reservados */
+footer p {
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+/* Logo Styles */
+.LogoSweet {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}

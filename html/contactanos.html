@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contáctanos - Sweet Fragrance</title>
+    <link rel="stylesheet" href="../styles/contactanos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="inicio.html">
+        <img src="/Logo.png" alt="Logo" class="LogoSweet" />
+      </a>
+      <nav>
+        <ul>
+          <li><a class="navegar" href="inicio.html">Inicio</a></li>
+          <li><a class="navegar" href="categoriaHombre.html">Hombre</a></li>
+          <li><a class="navegar" href="categoriaMujer.html">Mujer</a></li>
+        <li><a href="categoriaUnisex.html">Unisex</a></li>
+
+          <li><a class="navegar" href="conocenos.html">Conócenos</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección de contacto -->
+    <main>
+      <section class="contacto">
+        <h1>¡Ponte en contacto con nosotros!</h1>
+        <p>
+          ¿Tienes preguntas, comentarios o simplemente quieres conocernos mejor?
+          Llena el formulario y te responderemos lo antes posible.
+        </p>
+
+        <!-- Formulario de contacto -->
+        <form class="formulario-contacto" action="procesar_formulario.php" method="post">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Tu Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+          <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+      </section>
+
+      <!-- Sección de información de contacto -->
+      <section class="informacion-contacto">
+        <h2>Información de Contacto</h2>
+        <ul>
+          <li><i class="fas fa-phone"></i> Teléfono: +123 456 7890</li>
+          <li><i class="fas fa-envelope"></i> Email: contacto@sweetfragrance.com</li>
+          <li><i class="fas fa-map-marker-alt"></i>  Cra 54 #46-71 local 157B<br>
+            Centro comercial guayaquil</li>
+        </ul>
+      </section>
+
+      <!-- Sección de redes sociales -->
+      <section class="redes-sociales">
+        <h2>Síguenos en nuestras Redes Sociales</h2>
+        <div class="social-icons">
+          <a href="#" class="icono-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="icono-social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icono-social"><i class="fab fa-instagram"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="inicio.html">
+            <img src="../Logo.png" alt="Logo" />
+          </a>
+        </div>
+        <p>&copy; 2024 Sweet Fragrance. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

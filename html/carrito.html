@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - Sweet Fragrance</title>
+  <link rel="stylesheet" href="/styles/carrito.css">
+  <script defer src="scripts.js"></script> <!-- Archivo JavaScript para manejar la funcionalidad -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="inicio.html">
+      <img src="/Logo.png" alt="Logo" id="LogoSweet" />
+    </a>
+    <nav>
+      <ul>
+        <li class="navegar">
+          <a href="categoriaHombre.html">Hombre</a>
+        </li>
+        <li class="navegar">
+          <a href="categoriaMujer.html">Mujer</a>
+        </li>
+        <li class="navegar">
+          <a href="categoriaUnisex.html">Unisex</a>
+        </li>
+        <li class="navegar">
+          <a href="conocenos.html">Conócenos</a>
+        </li>
+        <li class="navegar">
+          <a href="contactanos.html">Contáctanos</a>
+        </li>
+        <li class="navegar">
+          <a href="carrito.html">
+            <img src="../Img/Carrito.png" alt="Carrito de compras" class="icono-carrito" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Carrito de compras -->
+  <main>
+    <section class="carrito-compras">
+      <h1>Tu Carrito de Compras</h1>
+      
+      <!-- Tabla de productos -->
+      <table class="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="carrito-body">
+          <tr>
+            <td><img src="/Imag.Inicio/JEAN PAUL GAULTIER.png" alt="Producto 1" class="img-producto"></td>
+            <td>Loción Jean Paul Gaultier</td>
+            <td><input type="number" class="cantidad" value="1" min="1"></td>
+            <td class="precio-unitario">$220.000</td>
+            <td class="precio-total">$220.000</td>
+            <td><button class="btn-eliminar">Eliminar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../ImagenesH/Lacoste 125 ml EDT.png" alt="Producto 2" class="img-producto"></td>
+            <td>Perfume Calvin Klein</td>
+            <td><input type="number" class="cantidad" value="2" min="1"></td>
+            <td class="precio-unitario">$380.000</td>
+            <td class="precio-total">$600.000</td>
+            <td><button class="btn-eliminar">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Resumen del carrito -->
+      <div class="resumen-carrito">
+        <h3>Total del Carrito: <span id="total-carrito">$2.450.000</span></h3>
+        <button class="btn-pagar">Proceder al Pago</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <ul>
+      <li><a href="terminos.html">Términos y Condiciones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li>Dirección: Cra 54 #46-71 local 157B<br>
+        Centro comercial Guayaquil
+    </li>   
+    </ul>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2024 Sweet Fragrance. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script para hacer el carrito interactivo -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const carritoBody = document.getElementById('carrito-body');
+      const totalCarrito = document.getElementById('total-carrito');
+
+      // Actualizar el precio total cuando se cambian las cantidades
+      const actualizarTotales = () => {
+        let total = 0;
+        carritoBody.querySelectorAll('tr').forEach(row => {
+          const cantidadInput = row.querySelector('.cantidad');
+          const precioUnitario = parseFloat(row.querySelector('.precio-unitario').textContent.replace('$', '').replace('.', ''));
+          const precioTotalCell = row.querySelector('.precio-total');
+
+          const cantidad = parseInt(cantidadInput.value);
+          const precioTotal = precioUnitario * cantidad;
+
+          precioTotalCell.textContent = `$${precioTotal.toLocaleString()}`;
+
+          total += precioTotal;
+        });
+
+        totalCarrito.textContent = `$${total.toLocaleString()}`;
+      };
+
+      // Escuchar cambios en las cantidades
+      carritoBody.addEventListener('input', (e) => {
+        if (e.target.classList.contains('cantidad')) {
+          actualizarTotales();
+        }
+      });
+
+      // Eliminar productos del carrito
+      carritoBody.addEventListener('click', (e) => {
+        if (e.target.classList.contains('btn-eliminar')) {
+          e.target.closest('tr').remove();
+          actualizarTotales();
+        }
+      });
+
+      // Inicializar los totales al cargar la página
+      actualizarTotales();
+    });
+  </script>
+</body>
+</html>

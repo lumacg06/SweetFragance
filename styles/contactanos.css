@@ -1,0 +1,235 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles - Página Hombre */
+header {
+    background-color: #1a1a1a;
+    /* Color de fondo más oscuro */
+    color: #fff;
+    padding: 1.5em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #cc0000;
+    /* Línea inferior azul */
+}
+
+/* Estilos de navegación */
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5em;
+    /* Mayor separación entre los enlaces */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    /* Tamaño más grande para los enlaces */
+    font-weight: 500;
+    /* Mayor peso en la tipografía */
+    padding: 0.5em 1.2em;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    /* Añadido efecto de transformación */
+    background-color: rgba(0, 102, 204, 0);
+    /* Fondo transparente inicial */
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #0ae39e;
+    /* Fondo azul al hacer hover */
+    color: #fff;
+    transform: scale(1.05);
+    /* Efecto de aumento al hacer hover */
+}
+
+
+/* Sección de contacto */
+.contacto {
+    text-align: center;
+    padding: 2em 1.5em;
+}
+
+.contacto h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+.contacto p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.formulario-contacto label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-enviar {
+    padding: 0.75em 1.5em;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #e65c00;
+}
+
+/* Información de contacto */
+.informacion-contacto {
+    background-color: #f9f9f9;
+    padding: 2em 1.5em;
+    text-align: center;
+}
+
+.informacion-contacto h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+.informacion-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.informacion-contacto ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion-contacto ul li i {
+    margin-right: 10px;
+    color: #ff6600;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    padding: 2em 1.5em;
+    text-align: center;
+}
+
+.redes-sociales h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.icono-social {
+    color: #333;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+.icono-social:hover {
+    color: #ff6600;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    font-size: 0.9em;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo en el footer */
+.footer-logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+/* Redes sociales */
+.footer-social {
+    margin-bottom: 1em;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #ff6600;
+    /* Cambia el color de los íconos al hacer hover */
+}
+
+footer p {
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+/* Logo Styles */
+.LogoSweet {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}

@@ -1,0 +1,230 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles - Página Hombre */
+header {
+  background-color: #1a1a1a;
+  /* Color de fondo más oscuro */
+  color: #fff;
+  padding: 1.5em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #0066cc;
+  /* Línea inferior azul */
+}
+
+/* Estilos del logo */
+#LogoSweet {
+  height: 50px;
+  /* Tamaño ligeramente mayor */
+  margin-right: 2em;
+}
+
+/* Estilos de navegación */
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5em;
+  /* Mayor separación entre los enlaces */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  /* Tamaño más grande para los enlaces */
+  font-weight: 500;
+  /* Mayor peso en la tipografía */
+  padding: 0.5em 1.2em;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+  /* Añadido efecto de transformación */
+  background-color: rgba(0, 102, 204, 0);
+  /* Fondo transparente inicial */
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+  /* Fondo azul al hacer hover */
+  color: #fff;
+  transform: scale(1.05);
+  /* Efecto de aumento al hacer hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  font-size: 0.9em;
+  margin-top: 2em;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo en el footer */
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+/* Redes sociales */
+.footer-social {
+  margin-bottom: 1em;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+  /* Cambia el color de los íconos al hacer hover */
+}
+
+/* Enlaces de términos y contacto */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+footer li {
+  margin: 0.5em 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Texto de derechos reservados */
+footer p {
+  margin-top: 1em;
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+/* Lociones Section Styles */
+.lociones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.locion {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+}
+
+.locion img {
+  width: 340px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 1%;
+}
+
+
+/* Estilo para separar el último h3 (precio) de la descripción */
+.locion h3:last-of-type {
+  margin-top: 15px;
+  /* Ajusta según el espacio que desees */
+  color: #0066cc;
+  /* Color diferente para el precio, opcional */
+  font-weight: bold;
+  /* Negrita para resaltar el precio */
+}
+
+.locion h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p.promodescription {
+  font-size: 20px;
+  animation: moveRight 15s infinite;
+  margin-bottom: 10px;
+}
+
+/* Logo Styles */
+.LogoSweet {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Estilos para el botón "Agregar al carrito" */
+.btn-carrito {
+  background-color: #0066cc;
+  /* Color de fondo naranja */
+  color: white;
+  /* Color del texto */
+  border: none;
+  /* Sin borde */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  font-size: 1em;
+  /* Tamaño de fuente */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor a mano */
+  transition: background-color 0.3s ease-in-out;
+  /* Transición suave al hacer hover */
+  margin-top: 10px;
+  /* Espacio superior */
+}
+
+.btn-carrito:hover {
+  background-color: #e65c00;
+  /* Color de fondo más oscuro al hacer hover */
+}
+
+.btn-carrito:active {
+  background-color: #51c6f8cc;
+  /* Color al hacer clic */
+}
+
+/* Estilos para el ícono del carrito */
+.icono-carrito {
+  width: 30px;
+  /* Ajusta el tamaño del ícono del carrito */
+  height: auto;
+  vertical-align: middle;
+  /* Alinea el ícono verticalmente con el texto */
+}

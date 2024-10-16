@@ -1,0 +1,281 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1.5em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid orange;
+}
+
+#LogoSweet {
+  height: 50px; /* Ajusta según el tamaño deseado del logo */
+  margin-right: 2em; /* Espacio entre el logo y la navegación */
+}
+
+/* Estilos de navegación */
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5em;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease-in-out;
+  background-color: rgba(255, 102, 0, 0);
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  font-size: 0.9em;
+  margin-top: 2em;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo en el footer */
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+/* Redes sociales */
+.footer-social {
+  margin-bottom: 1em;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+  color: #ff6600; /* Cambia el color de los íconos al hacer hover */
+}
+
+/* Enlaces de términos y contacto */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+footer li {
+  margin: 0.5em 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff6600;
+}
+
+/* Texto de derechos reservados */
+footer p {
+  margin-top: 1em;
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+/* Lociones Section Styles */
+.lociones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.locion {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+}
+
+.locion img {
+  width: 340px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 1%;
+}
+
+.locion h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Animations */
+h1 {
+  color: rgb(214, 8, 8);
+  font-size: 40px;
+  animation: moveRight 15s infinite;
+}
+
+@keyframes moveRight {
+  from {
+      transform: translateX(1000px);
+  }
+  to {
+      transform: translateX(-1000px);
+  }
+}
+
+
+/* Estilo para separar el último h3 (precio) de la descripción */
+.locion h3:last-of-type {
+  margin-top: 15px;
+  /* Ajusta según el espacio que desees */
+  color: #ff6600;
+  /* Color diferente para el precio, opcional */
+  font-weight: bold;
+  /* Negrita para resaltar el precio */
+}
+
+.locion h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p.promodescription {
+  font-size: 20px;
+  animation: moveRight 15s infinite;
+  margin-bottom: 10px;
+}
+
+/* Promo Section Styles */
+.promo {
+  background-color: #f7f7f7;
+  padding: 2em;
+  text-align: center;
+}
+
+.promo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.promo-img {
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+
+.promo-img:hover {
+  content: url('../ImagenesH/Hombre Calvin Klein Ck.png');
+}
+
+/* Logo Styles */
+.LogoSweet {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Estilos para el ícono del carrito */
+.icono-carrito {
+  width: 30px; /* Ajusta el tamaño del ícono del carrito */
+  height: auto;
+  vertical-align: middle; /* Alinea el ícono verticalmente con el texto */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px; /* Espacio entre los elementos del menú */
+}
+
+/* Estilos para el botón "Agregar al carrito" */
+.btn-carrito {
+  background-color: #ff6600;
+  /* Color de fondo naranja */
+  color: white;
+  /* Color del texto */
+  border: none;
+  /* Sin borde */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  font-size: 1em;
+  /* Tamaño de fuente */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor a mano */
+  transition: background-color 0.3s ease-in-out;
+  /* Transición suave al hacer hover */
+  margin-top: 10px;
+  /* Espacio superior */
+}
+
+.btn-carrito:hover {
+  background-color: #e65c00;
+  /* Color de fondo más oscuro al hacer hover */
+}
+
+.btn-carrito:active {
+  background-color: #ff6600;
+  /* Color al hacer clic */
+}
+
+/* Estilos para el ícono del carrito */
+.icono-carrito {
+  width: 30px;
+  /* Ajusta el tamaño del ícono del carrito */
+  height: auto;
+  vertical-align: middle;
+  /* Alinea el ícono verticalmente con el texto */
+}
