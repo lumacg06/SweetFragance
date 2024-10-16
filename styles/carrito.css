@@ -61,16 +61,19 @@ header {
   
 /* Footer Styles */
 /* Footer Styles */
+
+/* Footer Styles */
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
-  padding: 1em 0; /* Ajusta el padding para hacer el footer más delgado */
+  padding: 2em 0;
   font-size: 0.9em;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
   bottom: 0;
-  width: 100%;
-  z-index: 100;
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  z-index: 1000; /* Asegura que el footer se mantenga por encima de otros elementos */
 }
 
   
