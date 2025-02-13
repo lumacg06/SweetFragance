@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio Sweet Fragrance</title>
-    <link rel="stylesheet" href="../styles/inicio.css" />
+    <title>Hombre</title>
+    <link rel="stylesheet" href="../styles/hombre.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -13,25 +13,15 @@
   <body>
     <header>
       <a href="inicio.html">
-        <img src="/Logo.png" alt="Logo" id="LogoSweet" />
+        <img src="/Logo.png" alt="Logo" class="LogoSweet" />
       </a>
       <nav>
         <ul>
-          <li class="navegar">
-            <a class="navegar" href="categoriaHombre.html">Hombre</a>
-          </li>
-          <li class="navegar">
-            <a class="navegar" href="categoriaMujer.html">Mujer</a>
-          </li>
-          <li class="navegar">
-            <a class="navegar" href="categoriaUnisex.html">Unisex</a>
-          </li>
-          <li class="navegar">
-            <a class="navegar" href="conocenos.html">Conócenos</a>
-          </li>
-          <li class="navegar">
-            <a class="navegar" href="contactanos.html">Contáctanos</a>
-          </li>
+          <li><a class="navegar" href="inicio.html">Inicio</a></li>
+          <li><a class="navegar" href="categoriaMujer.html">Mujer</a></li>
+          <li><a class="navegar" href="categoriaUnisex.html">Unisex</a></li>
+          <li><a class="navegar" href="conocenos.html">Conócenos</a></li>
+          <li><a class="navegar" href="contactanos.html">Contáctanos</a></li>
           <!-- Carrito de compras -->
           <li class="navegar">
             <a class="navegar" href="carrito.html">
@@ -46,27 +36,7 @@
       </nav>
     </header>
 
-    <section class="promo">
-      <h1>Promoción de lociones <br /></h1>
-      <p class="promodescription">
-        <strong>¡Gran Promoción de Lociones!</strong><br />
-        Aprovecha nuestra oferta exclusiva y lleva
-        <strong>2 lociones</strong> de las mejores marcas por tan solo
-        <strong>$430.000</strong>.<br />
-        ¡Calidad y elegancia al mejor precio! No te quedes sin la tuya, esta
-        oferta es por tiempo limitado.
-      </p>
-      <img
-        src="../Imag.Inicio/Al Noble Safeer Lattafa.png"
-        alt="Promoción de Lociones"
-        class="promo-img"
-      />
-      <p class="promodescription">
-        Descubre la fragancia exclusiva de nuestras lociónes estrellas, ¡solo
-        por tiempo limitado!
-      </p>
-    </section>
-
+    <!-- Sección de lociones -->
     <section class="lociones">
       <div class="locion">
         <img src="../Imag.Inicio/JEAN PAUL GAULTIER.png" alt="Loción 1" />
@@ -76,68 +46,6 @@
           notas frescas y sensuales.
         </p>
         <h3>$220.000</h3>
-        <button class="btn-carrito" data-nombre="Loción 1" data-precio="890000">
-          Agregar al carrito
-        </button>
-      </div>
-      <div class="locion">
-        <img
-          src="../Imag.Inicio/Perfume Mujer Calvin Klein Ck In2U For Her 100 Ml EDT.png"
-          alt="Loción 2"
-        />
-        <h3>Calvin Klein</h3>
-        <p>Seducción pura, aroma adictivo, toque moderno.</p>
-        <h3>$250.000</h3>
-        <button class="btn-carrito" data-nombre="Loción 1" data-precio="890000">
-          Agregar al carrito
-        </button>
-      </div>
-      <div class="locion">
-        <img
-          src="../Imag.Inicio/Rabanne Hombre 1 Million 200ml EDT.png"
-          alt="Loción 3"
-        />
-        <h3>Rabanne Million</h3>
-        <p>
-          Pasión en frasco dorado, adictivo y envolvente<br />, magnetismo puro.
-        </p>
-        <h3>$920.000</h3>
-        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
-          Agregar al carrito
-        </button>
-      </div>
-      <div class="locion">
-        <img src="../Imag.Inicio/Al Noble Safeer Lattafa.png" alt="Loción 1" />
-        <h3>Noble Safeer Lattafa</h3>
-        <p>Misterio oriental, especias exóticas, aroma intenso.</p>
-        <h3>$340.000</h3>
-        <button class="btn-carrito" data-nombre="Loción 1" data-precio="890000">
-          Agregar al carrito
-        </button>
-      </div>
-      <div class="locion">
-        <img
-          src="../Imag.Inicio/Armaf Club De Nuit 100ml edp Femme.png"
-          alt="Loción 1"
-        />
-        <h3>Armaf Club De Nuit</h3>
-        <p>
-          Noche de fiesta, intensidad pura,<br />
-          aroma adictivo.
-        </p>
-        <h3>$290.000</h3>
-        <button class="btn-carrito" data-nombre="Loción 1" data-precio="890000">
-          Agregar al carrito
-        </button>
-      </div>
-      <div class="locion">
-        <img src="../Imag.Inicio/Perfume Yara Moi 100ml.png" alt="Loción 1" />
-        <h3>Yara Moi</h3>
-        <p>
-          Romance oriental, jazmín sensual,<br />
-          dulzura adictiva.
-        </p>
-        <h3>$490.000</h3>
         <button class="btn-carrito" data-nombre="Loción 1" data-precio="890000">
           Agregar al carrito
         </button>
@@ -158,6 +66,20 @@
         </button>
       </div>
       <div class="locion">
+        <img
+          src="../Imag.Inicio/Rabanne Hombre 1 Million 200ml EDT.png"
+          alt="Loción 3"
+        />
+        <h3>Rabanne Million</h3>
+        <p>
+          Pasión en frasco dorado, adictivo y envolvente<br />, magnetismo puro.
+        </p>
+        <h3>$920.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+      <div class="locion">
         <img src="../ImagenesH/Al Noble Wazeer Lattafa.png" alt="Loción 3" />
         <h3>Noble Wazeer lettafa</h3>
         <p>
@@ -169,8 +91,114 @@
           Agregar al carrito
         </button>
       </div>
-      <!-- Añade más lociones según sea necesario -->
+
+      <div class="locion">
+        <img src="../ImagenesH/Hombre Calvin Klein Ck.png" alt="Loción 3" />
+        <h3>Calvin Klein</h3>
+        <p>
+          Sensualidad pura,
+          adictiva y magnética,<br /> piel de seda.
+        </p>
+        <h3>$120.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="locion">
+        <img src="../ImagenesH/Hugo Boss Hugo Iced.png" alt="Loción 3" />
+        <h3>Hugo Boss Iced</h3>
+        <p>
+          Energía helada, frescor extremo,<br />
+          adrenalina pura.
+        </p>
+        <h3>$220.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="locion">
+        <img src="../ImagenesH/Dior Sauvage Elixir EDP.jpg" alt="Loción 3" />
+        <h3>Dior Sauvage Elixir</h3>
+        <p>
+          Lujo extremo, aroma embriagador,<br />
+          esencia de rey.
+        </p>
+        <h3>$320.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="locion">
+        <img src="../ImagenesH/INVICTUS.jpeg" alt="Loción 3" />
+        <h3>Invictus</h3>
+        <p>Choque de sensaciones, <br />frescor y calor, inolvidable.</p>
+        <h3>$230.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="locion">
+        <img src="../ImagenesH/Lacoste 125 ml EDT.png" alt="Loción 3" />
+        <h3>Lacoste</h3>
+        <p>Casual y sofisticado, perfecto para diario,<br /> aroma limpio.</p>
+        <h3>$420.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="locion">
+        <img
+          src="../ImagenesH/Loción polo classic de ralph lauren.jpeg"
+          alt="Loción 3"
+        />
+        <h3>Polo classic ralph</h3>
+        <p>
+          Poderío masculino, duradero y adictivo,<br />
+          conquista al instante.
+        </p>
+        <h3>$320.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="locion">
+        <img src="../ImagenesH/MADISON AVESUE.jpg" alt="Loción 3" />
+        <h3>Madison avesue</h3>
+        <p>
+          Elegancia neoyorquina, lujo atemporal,<br />
+          aroma sofisticado.
+        </p>
+        <h3>$230.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+
+      <div class="locion">
+        <img
+          src="../ImagenesH/Paco Rabanne Million Gold For Him.png"
+          alt="Loción 3"
+        />
+        <h3>Million Gold For</h3>
+        <p>Elegancia urbana, toque dorado, <br />futuro brillante.</p>
+        <h3>$920.000</h3>
+        <button class="btn-carrito" data-nombre="Loción 3" data-precio="920000">
+          Agregar al carrito
+        </button>
+      </div>
+      <!-- Repite el patrón para más lociones -->
     </section>
+
+    <!-- Carrito de compras - Contenido -->
+    <div id="carrito-contenido">
+      <!-- Aquí se mostrarán los productos añadidos al carrito -->
+    </div>
 
     <footer>
       <div class="footer-content">
@@ -204,3 +232,4 @@
     </footer>
   </body>
 </html>
+  
