@@ -226,10 +226,9 @@ footer p {
     color: #aaa;
 }
 
-/* Logo Styles */
 .LogoSweet {
-    width: 100px;
-    height: auto;
-    float: left;
-    margin-right: 10px;
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
 }
